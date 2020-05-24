@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="lectura.css">
+	<title>Lectura Rapida</title>
+</head>
+<body>
+
+
+    
+    <div id="input" class="input-div">
+        <h1>Lectura Rápida</h1>
+        <p style="text-align: center;">Agregar el Texto</p>
+        <textarea id="words" rows="10" cols="80">Aquí puedes agregar el texto </textarea>
+
+    </div>
+
+<div id="leer-control" class="leer-div">
+
+        <p  style="text-align: center;">Control</p>
+        <button id="start" type="button">Empezar</button>
+        <button id="stop" type="button">Parar</button>
+
+        <p  style="text-align: center;">Velocidad</p>
+        <select id="speed">
+          <option value="300">200 milisegundos</option>
+          <option value="200">300 milisegundos</option>
+          <option value="171" selected="selected">350 milisegundos</option>
+          <option value="150">400 milisegundos</option>
+          <option value="133">450 milisegundos</option>
+          <option value="120">500 milisegundos</option>
+        </select>
+
+      
+    </div>
+
+    <div id="display"></div>
+
+</body>
+<script type="text/javascript" src="lectura.js"></script>
+</html>

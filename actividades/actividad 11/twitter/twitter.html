@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Twitter</title>
+</head>
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="twitter.css">
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+<script type="text/javascript" src="twitter.js"></script>
+<body>
+	<nav class="navbar-light">
+		<h1 class="text-center">Twitter</h1>
+	</nav>
+
+	<div class="grid-container">
+
+		<div class="user-img">
+			<img class="img-thumbnail "src="user.png">
+		</div>
+
+		<div class="input-text">
+			<textarea class="txt" id="text" placeholder="Escribe algo..."></textarea>
+		</div>
+
+		<div>
+			<button type="button" class="btn btn-primary btn-p" onclick="saveMssg()"><i class="fa fa-pencil-square-o fa-2x" aria-hidden="true"></i></button>
+		</div>
+	</div>
+	<br>
+	<div class="posts mb-5" id="posts">
+		<div class='media pb-3'>
+			<img class='mr-3 img-thumbnail user-img' src='user.png'>
+			<div class='media-body'>
+			  	<div class='row justify-content-start'>
+					<div class='col-4'>
+				      	<h5>Hugo Hiram</h5>
+					</div>
+					<div class='col-4'>
+					    <h5 class="idUser">@haviles</h5>
+					</div>
+				</div>
+		    	<p class="text-mssg">Este es mi primer Tweet, PogChamp</p>
+			</div>
+		</div>
+
+	</div>
+
+
+
+	<footer>
+		<h3>DIPLOMADO DESARROLLO WEB</h3>
+	</footer>
+
+</body>
+</html>

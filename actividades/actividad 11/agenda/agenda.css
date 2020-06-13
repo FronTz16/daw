@@ -1,0 +1,12 @@
+body{
+	height: 100%;
+	margin: 0;
+	background-color: #e4eef5;
+}
+.con{
+	width: 60%;
+	height: auto;
+    margin: 0 auto;
+    padding: 20px;
+    margin-top: 50px;
+}

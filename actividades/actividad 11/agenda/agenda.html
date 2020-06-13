@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Agenda</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="agenda.css">
+	<script type="text/javascript" src="agenda.js"></script>
+</head>
+
+<body>
+	<div class="con">
+		<div class="card text-center">
+			<div class="card-header bg-dark">
+			   <h5 class="text-light">Agenda</h5>
+			</div>
+			<div class="card-body">
+				<form name="agendaForm">
+					<div class="row">
+						<div class="col">
+							<h5>Agregar Contacto</h5>
+							<div class="row  mb-3">
+								<div class="col">
+								<span>Nombre</span>
+								<input type="text" class="form-control" placeholder="Nombre" id="nombre">
+								</div>
+							</div>
+
+							<div class="row  mb-3">
+								<div class="col">
+									<span>Numero</span>
+									<input type="text" class="form-control" placeholder="xxxxxx" id="numero">
+								</div>
+								<div class="col">
+									<span>Correo</span>
+									<input type="email" class="form-control" placeholder="e-mail" id="email">
+								</div>
+							</div>
+							<div class="row  mb-3">
+								<div class="col">
+									<span>Direccion</span>
+									<input type="text" class="form-control" placeholder="Direccion" id="direccion">
+								</div>
+							</div>
+							<button type="button" class="btn btn-primary btn-lg btn-block" onclick="guardar()">Guardar</button>
+						</div>
+						<div class="col">
+							<h5>Contactos</h5>
+
+							<div class="row mb-3">
+								<div class="col">
+									<input type="text" class="form-control" id="buscar" placeholder="Buscar Contacto"  onkeyup="buscarC()"name="">
+								</div>
+							</div>
+							<div class="row" id="contactos">
+								<!-- <div class="col" id="contacto">
+									<a href="#" onclick="verContacto(2)">Prueba</a>
+									<hr class="hr-primary" />
+								</div> -->
+
+							</div>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

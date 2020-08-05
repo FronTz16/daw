@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Agenda</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript" src="funciones.js"></script>
+</head>
+<body >
+	<div class="con">
+		<div class="card text-center">
+			<div class="card-header bg-dark">
+			   <h5 class="text-light">PlaceKeeper</h5>
+			</div>
+			<div class="card-body main-card">
+				<div class="input-container">
+					<label>Nombre del Lugar</label>
+					<input type="text" id="nombre" name="">
+					<label> Descripcion</label>
+					<textarea id="descripcion"></textarea>
+					<label>Ubicacion</label>
+					<div class="coor-div">
+						<input type="text" class="inpt-coor" id="coordenadas"placeholder="Coordenadas" name="">
+						<a href="" onclick="getLocation()">
+							<i class="fa fa-map-marker fa-2x"></i>
+						</a>
+					</div>
+					<div class="div-foto">
+						<video  playsinline autoplay height="280" width="370" id="video">
+
+						</video>
+						
+						<button type="button" onclick="takePhoto()" class="btn btn-secondary btn-lg btn-block">Tomar Foto</button>
+					</div>
+					<button type="button" onclick="getTitle()" class="btn btn-primary btn-lg btn-block">Guardar Lugar</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

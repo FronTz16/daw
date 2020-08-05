@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <title>Practica 13</title>
+    <script type="text/javascript" src="demo_BOM.js"></script>
+</head>
+
+<body>
+    <center>
+        <div style="padding-right: 15%;padding-left: 15%;">
+            
+        
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">WINDOW</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>window innerHeight</td>
+                    <td>Obtiene la altura de la ventana</td>
+                    <td><input type="button" name="boton" onclick="ventana1()" value="ver" class="btn btn-primary ">
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td>window innerWidth</td>
+                    <td>Obtiene la anchura de la ventana</td>
+                    <td><input type="button" name="boton" onclick="ventana2()" value="ver" class="btn btn-primary ">
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">3</th>
+                    <td>window open()</td>
+                    <td>Abre una nueva ventana con atributos proporcionados (URL, nombre, tamaño)</td>
+                    <td><input type="button" name="boton" onclick="ventana3()" value="ver" class="btn btn-primary ">
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">4</th>
+                    <td>window close()</td>
+                    <td>Cierra la ventana</td>
+                    <td><input type="button" name="boton" onclick="ventana4()" value="ver" class="btn btn-primary ">
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">5</th>
+                    <td>window moveTo()</td>
+                    <td>Mueve la ventana a dos coordenadas proporcionadas</td>
+                    <td><input type="button" name="boton" onclick="ventana5()" value="ver" class="btn btn-primary ">
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">6</th>
+                    <td>window resizeTo()</td>
+                    <td>Redimensiona la ventana a un tamaño especificado en dos atributos</td>
+                    <td><input type="button" name="boton" onclick="ventana6()" value="ver" class="btn btn-primary ">
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">7</th>
+                    <td>window alert()</td>
+                    <td>Despliega una ventana emergente con un solo botón de aceptar</td>
+                    <td><input type="button" name="boton" onclick="ventana7()" value="ver" class="btn btn-primary ">
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">8</th>
+                    <td>window prompt()</td>
+                    <td>Despliega una ventana emergente para la captura de un valor</td>
+                    <td><input type="button" name="boton" onclick="ventana8()" value="ver" class="btn btn-primary ">
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">9</th>
+                    <td>window confirm()</td>
+                    <td>Despliega una ventana de confirmación con el botón de aceptar y cancela</td>
+                    <td><input type="button" name="boton" onclick="ventana9()" value="ver" class="btn btn-primary ">
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <!-- tabla 2-------------------------------------------------------------------------- -->
+        <br>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">SCREEN</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>screen heigth</td>
+                    <td>Obtiene la altura total de la ventana</td>
+                    <td><input type="button" name="boton" onclick="screen1()" value="ver" class="btn btn-primary "></td>
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td>screen width</td>
+                    <td>Obtiene la anchura total de la ventana </td>
+                    <td><input type="button" name="boton" onclick="screen2()" value="ver" class="btn btn-primary "></td>
+                </tr>
+                <tr>
+                    <th scope="row">3</th>
+                    <td>screen availWidth</td>
+                    <td>Obtiene la anchura de la ventana disponible</td>
+                    <td><input type="button" name="boton" onclick="screen3()" value="ver" class="btn btn-primary "></td>
+                </tr>
+                <tr>
+                    <th scope="row">4</th>
+                    <td>screen avalHeigth</td>
+                    <td>Obtiene la altura de la ventana disponible (sin la barra de windows, por ejemplo)</td>
+                    <td><input type="button" name="boton" onclick="screen4()" value="ver" class="btn btn-primary "></td>
+                </tr>
+                <tr>
+                    <th scope="row">5</th>
+                    <td>screen colorDepth</td>
+                    <td>Regresa la profundidad de color de la pantalla en la cantidad de bits usados para cada color
+                    </td>
+                    <td><input type="button" name="boton" onclick="screen5()" value="ver" class="btn btn-primary "></td>
+                </tr>
+                <tr>
+                    <th scope="row">6</th>
+                    <td>screen pixelDepth</td>
+                    <td>Regresa la profundidad de pixeles de la pantalla</td>
+                    <td><input type="button" name="boton" onclick="screen6()" value="ver" class="btn btn-primary "></td>
+                </tr>
+            </tbody>
+        </table>
+        <!-- tabla 3--------------------------------------------------------------------- -->
+        <br>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">LOCATION</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>location href</td>
+                    <td>Se obitnene la URL de la página actual</td>
+                    <td><input type="button" name="boton" onclick="location1()" value="ver" class="btn btn-primary ">
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td>location hostname</td>
+                    <td>Se obtiene el nombre del host o el nombre del dominio del sitio</td>
+                    <td><input type="button" name="boton" onclick="location2()" value="ver" class="btn btn-primary ">
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">3</th>
+                    <td>location protocol</td>
+                    <td>Regresa el protocolo con el que se cargó el sitio (HTTP o HTTPS)</td>
+                    <td><input type="button" name="boton" onclick="location3()" value="ver" class="btn btn-primary ">
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">4</th>
+                    <td>location assign()</td>
+                    <td>Carga un nuevo documento asignandole una dirección URL</td>
+                    <td><input type="button" name="boton" onclick="location4()" value="ver" class="btn btn-primary ">
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">5</th>
+                    <td>location reload()</td>
+                    <td>Recarga el sitio actual</td>
+                    <td><input type="button" name="boton" onclick="location5()" value="ver" class="btn btn-primary ">
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">6</th>
+                    <td>location replace()</td>
+                    <td>Remplaza el documento actual con uno nuevo (parecido a assign())</td>
+                    <td><input type="button" name="boton" onclick="location6()" value="ver" class="btn btn-primary ">
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <!-- tabla 4--------------------------------------------------------------------- -->
+        <br>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">HISTORY</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>history length</td>
+                    <td>Obtiene el número de elementos en la lista del historial</td>
+                    <td><input type="button" name="boton" onclick="historial1()" value="ver" class="btn btn-primary ">
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td>history back()</td>
+                    <td>Carga la URL previa del historial</td>
+                    <td><input type="button" name="boton" onclick="historial2()" value="ver" class="btn btn-primary ">
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">3</th>
+                    <td>history forward()</td>
+                    <td>Carga la siguiente URL en la lista del historial</td>
+                    <td><input type="button" name="boton" onclick="historial3()" value="ver" class="btn btn-primary ">
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">4</th>
+                    <td>history go()</td>
+                    <td>Carga una página específica del historial (recibe un indice para cargar o una cantidad de
+                        saltos)</td>
+                    <td><input type="button" name="boton" onclick="historial4()" value="ver" class="btn btn-primary ">
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <!-- tabla 5--------------------------------------------------------------------- -->
+        <br>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">NAVIGATOR (parte 1)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>navigator appCodeName</td>
+                    <td> Obtiene el nombre clave del navegador, por lo general su respuesta es "Mozilla"</td>
+                    <td><input type="button" name="boton" onclick="navigator1()" value="ver" class="btn btn-primary ">
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td>navigator appName</td>
+                    <td> Obtiene el nombre del navegador, por lo general su respuesta es "Netscape"</td>
+                    <td><input type="button" name="boton" onclick="navigator2()" value="ver" class="btn btn-primary ">
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">3</th>
+                    <td>navigator appVersion</td>
+                    <td> Regresa la información de la versión del navegador</td>
+                    <td><input type="button" name="boton" onclick="navigator3()" value="ver" class="btn btn-primary ">
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">4</th>
+                    <td>navigator userAgent</td>
+                    <td> Regresa la propiedad del encabezado del "user-agent" enviada al servidor</td>
+                    <td><input type="button" name="boton" onclick="navigator4()" value="ver" class="btn btn-primary ">
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">5</th>
+                    <td>navigator language</td>
+                    <td>Regresa el lenguaje (idioma) del navegador</td>
+                    <td><input type="button" name="boton" onclick="navigator5()" value="ver" class="btn btn-primary ">
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">6</th>
+                    <td>navigator platform</td>
+                    <td>Obtiene el Sistema Operativo del navegador, no puede reportar nuevos sistemas operativos
+                        lanzados después del navegador</td>
+                    <td><input type="button" name="boton" onclick="navigator6()" value="ver" class="btn btn-primary ">
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">7</th>
+                    <td>navigator onLine()</td>
+                    <td>Es un booleano que regresará positivo en caso de que se encuentre en linea el navegador</td>
+                    <td><input type="button" name="boton" onclick="navigator7()" value="ver" class="btn btn-primary ">
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        </div>
+    </center>
+
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
